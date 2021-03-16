@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.presentation.Controller">
+   <children>
+      <Label layoutX="167.0" layoutY="39.0" prefHeight="24.0" prefWidth="238.0" text="Enter your username and password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="146.0" prefHeight="26.0" prefWidth="96.0" text="Username">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="204.0" prefHeight="26.0" prefWidth="82.0" text="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="269.0" layoutY="147.0" />
+      <PasswordField fx:id="password" layoutX="269.0" layoutY="205.0" />
+      <RadioButton fx:id="admin" layoutX="163.0" layoutY="312.0" mnemonicParsing="false" text="admin" />
+      <RadioButton fx:id="client" layoutX="334.0" layoutY="312.0" mnemonicParsing="false" text="client" />
+      <Button layoutX="495.0" layoutY="351.0" mnemonicParsing="false" onAction="#Validation" prefHeight="26.0" prefWidth="82.0" text="Login" />
+   </children>
+</AnchorPane>

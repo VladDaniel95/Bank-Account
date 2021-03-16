@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.presentation.adminController">
+   <children>
+      <TextField fx:id="name" layoutX="8.0" layoutY="55.0" text="name" />
+      <TextField fx:id="id_card" layoutX="8.0" layoutY="89.0" text="id_card" />
+      <TextField fx:id="address" layoutX="8.0" layoutY="128.0" text="address" />
+      <TextField fx:id="login_id" layoutX="8.0" layoutY="168.0" text="login_id" />
+      <TextField fx:id="cnp" layoutX="8.0" layoutY="205.0" text="cnp" />
+      <TextField fx:id="client_id" layoutX="8.0" layoutY="244.0" text="client_id" />
+      <Button layoutX="8.0" layoutY="307.0" mnemonicParsing="false" onAction="#Insert" text="insert" />
+      <Button layoutX="62.0" layoutY="307.0" mnemonicParsing="false" onAction="#Delete" text="remove" />
+      <Button layoutX="127.0" layoutY="306.0" mnemonicParsing="false" onAction="#Update" text="update" />
+      <TableView fx:id="table" layoutX="192.0" layoutY="1.0" prefHeight="400.0" prefWidth="408.0">
+        <columns>
+          <TableColumn fx:id="c_name" prefWidth="66.19998168945312" text="name" />
+          <TableColumn fx:id="c_card" prefWidth="74.79998779296875" text="id_card" />
+            <TableColumn fx:id="c_address" prefWidth="72.60003662109375" text="address" />
+            <TableColumn fx:id="c_login" prefWidth="61.4000244140625" text="login_id" />
+            <TableColumn fx:id="c_cnp" minWidth="0.0" prefWidth="51.20001220703125" text="cnp" />
+            <TableColumn fx:id="c_client" prefWidth="58.0" text="client_id" />
+        </columns>
+      </TableView>
+      <Button layoutX="64.0" layoutY="351.0" mnemonicParsing="false" onAction="#loadClients" text="display" />
+   </children>
+</AnchorPane>

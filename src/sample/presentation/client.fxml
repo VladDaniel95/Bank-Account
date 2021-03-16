@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.presentation.clientController">
+   <children>
+      <TextField fx:id="account_id" layoutX="46.0" layoutY="52.0" prefHeight="26.0" prefWidth="93.0" />
+      <TextField fx:id="client_id" layoutX="46.0" layoutY="98.0" prefHeight="26.0" prefWidth="93.0" />
+      <TextField fx:id="type" layoutX="46.0" layoutY="143.0" prefHeight="26.0" prefWidth="93.0" />
+      <TextField fx:id="amount" layoutX="46.0" layoutY="187.0" prefHeight="26.0" prefWidth="93.0" />
+      <Label layoutX="58.0" layoutY="31.0" prefHeight="18.0" prefWidth="62.0" text="account id" />
+      <Label layoutX="65.0" layoutY="79.0" prefHeight="18.0" prefWidth="62.0" text="client id" />
+      <Label layoutX="78.0" layoutY="124.0" prefHeight="18.0" prefWidth="62.0" text="type" />
+      <Label layoutX="67.0" layoutY="169.0" prefHeight="18.0" prefWidth="62.0" text="amount" />
+      <Button layoutX="52.0" layoutY="248.0" mnemonicParsing="false" onAction="#Insert" prefHeight="26.0" prefWidth="73.0" text="insert" />
+      <Button layoutX="52.0" layoutY="286.0" mnemonicParsing="false" onAction="#Delete" prefHeight="26.0" prefWidth="73.0" text="remove" />
+      <Button layoutX="53.0" layoutY="326.0" mnemonicParsing="false" onAction="#Update" prefHeight="26.0" prefWidth="73.0" text="update" />
+      <TableView fx:id="table" layoutX="294.0" layoutY="3.0" prefHeight="394.0" prefWidth="302.0">
+        <columns>
+          <TableColumn fx:id="c_account" prefWidth="76.20001220703125" text="acc_id" />
+          <TableColumn fx:id="c_client" prefWidth="74.20001220703125" text="client_id" />
+            <TableColumn fx:id="c_type" prefWidth="74.20001220703125" text="type" />
+            <TableColumn fx:id="c_amount" prefWidth="74.20001220703125" text="amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="229.0" layoutY="352.0" mnemonicParsing="false" onAction="#loadAccount" text="display" />
+   </children>
+</AnchorPane>
